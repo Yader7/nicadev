@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nica.create"
+             Title="create"
+             BackgroundColor="#1E3A8A">
+
+    <AbsoluteLayout>
+        <!-- Home Button -->
+        <Button Text="Home"
+                BackgroundColor="White"
+                TextColor="Black"
+                CornerRadius="20"
+                AbsoluteLayout.LayoutBounds="0.05, 0.05, 100, 50"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <!-- Title -->
+        <Label Text="Create"
+               FontSize="24"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               AbsoluteLayout.LayoutBounds="0.5, 0.1, -1, -1"
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <!-- Main Content -->
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1"
+                     AbsoluteLayout.LayoutFlags="PositionProportional">
+            <!-- Create Board Section -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="10"
+                   Padding="10"
+                   Margin="10">
+                <StackLayout>
+                    <Image Source="https://placehold.co/300x300?text=Create+Board"
+                           WidthRequest="300"
+                           HeightRequest="300" />
+                    <Label Text="Create Board"
+                           FontSize="16"
+                           TextColor="Black"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+            <!-- Create Book Section -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="10"
+                   Padding="10"
+                   Margin="10">
+                <StackLayout>
+                    <Image Source="https://placehold.co/300x300?text=Create+Book"
+                           WidthRequest="300"
+                           HeightRequest="300" />
+                    <Label Text="Create Book"
+                           FontSize="16"
+                           TextColor="Black"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </AbsoluteLayout>
+
+
+</ContentPage>
